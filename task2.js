@@ -3,14 +3,19 @@
 let car ={
     color: 'black',
     year:2000 ,
+
       
 }
 let stroka="company"
 
 function hasProp(str,obj){
 for(let key in obj){
-   console.log ((key ===str) ? true : false)
+    if(key===str){
+        return true
+    }
+     else return false
+   
 }
 }
-hasProp(stroka,car)
+console.log(hasProp(stroka,car))
 
